@@ -1,30 +1,43 @@
 /* Square.css */
 .square {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  margin: 5px;
-  background-color: rgb(64, 133, 151);
-  border: 1px solid rgb(33, 28, 28);
+  width: 200px;
+  height: 200px;
+ 
+ 
+ font-size: 60px;
+ font-weight: 700;
+  background-color: #3a7ca5; /* Updated background color */
+  border: 1px solid #212021; /* Updated border color */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
 }
 
-.square p {
-  margin: 0;
-  font-size: 18px;
-}
 
 /* Board.css */
 .board-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  max-width: 180px; /* Adjust as needed */
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+.square:hover {
+  background-color: #52a8d4; /* Hover effect color */
+}
+
+
+.board-title {
+  font-size: 50px;
+ 
+  color: #3a7ca5;
+  text-align: center; /* Title color */
 }
 
 
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0d0f15;
+}
