@@ -1,11 +1,14 @@
 import Board from "../Components/Board";
 import { useState } from "react";
+import Confetti from 'react-confetti';
+
 
 function Game() {
   const [xIsNext, setxIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0)
   const currentSquares = history[currentMove];
+
 
 
 
@@ -46,6 +49,7 @@ return(
           <Board isNext={xIsNext} onPlay={handlePlay}  squares={currentSquares}/>
         </div>
         <div className="game-info">
+       
           <ol>{moves}</ol>
         </div>
       </div>

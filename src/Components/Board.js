@@ -1,6 +1,7 @@
 import "../App.css";
 import Square from "../Components/Square";
 import { useState } from "react";
+import Confetti from 'react-confetti';
 
 function Board({squares, onPlay, isNext}) {
   
@@ -8,8 +9,14 @@ function Board({squares, onPlay, isNext}) {
 const winner = calculateWinner(squares);
 
 let status;
+
 if (winner) {
-  status = "Winner: " + winner;
+  status = (
+    <>
+      <Confetti />
+      Winner: {winner}
+    </>
+  );
 } else {
   status = "Next player: " + (isNext ? "X" : "O");
 }
