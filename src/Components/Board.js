@@ -1,6 +1,6 @@
 import "../App.css";
 import Square from "../Components/Square";
-import { useState } from "react";
+
 import Confetti from 'react-confetti';
 
 function Board({squares, onPlay, isNext, player1Props, player2Props}) {
@@ -56,8 +56,11 @@ if (winner) {
 
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
-      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-        return squares[a];
+      if (squares[a] &&
+         squares[a] === squares[b] && 
+         squares[a] === squares[c]) {
+        // Check if the winner is "X" or "O" and return the corresponding player's name
+      return squares[a] === "X" ? player1Props : player2Props;
       }
     }
   }
