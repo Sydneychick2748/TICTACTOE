@@ -45,7 +45,7 @@ body {
 
 
 .status {
-  color: white; /* Text color */
+  color: white; 
   font-family: monospace;
   font-size: 20px;
   font-weight: bold;
@@ -56,9 +56,8 @@ body {
 
 
 
-/* Game.css */
 
-/* Add this style for the moves list */
+
 .game-info ol {
   padding: 0;
   list-style-type: none;
@@ -71,7 +70,7 @@ body {
 
 
 
-/* Style for the buttons in the moves list */
+
 .game-info button {
   font-family: monospace;
   font-size: 16px;
@@ -86,12 +85,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Hover effect for the buttons */
+
 .game-info button:hover {
   background-color: #45a049; 
 }
 
-/* Optional: Add some spacing between buttons */
+
 .game-info li {
   margin-bottom: 5px;
 }
@@ -100,13 +99,13 @@ body {
 
 .display-names {
   margin-top: 20px;
-  color: white; /* Text color */
+  color: white; 
   font-family: monospace;
   font-size: 20px;
   font-weight: bold;
 }
 
-/* Game.css */
+
 
 
 .two-player-form {
@@ -129,7 +128,7 @@ input {
   border-radius: 5px;
   padding: 8px;
   color: white;
-  background-color: #3a7ca5; /* Input background color */
+  background-color: #3a7ca5; 
 }
 
 button {
@@ -148,9 +147,9 @@ button:hover {
 }
 
 .names-of-players {
-  background-color: #4CAF50; /* Green box color */
+  background-color: #4CAF50; 
   
-  color: white; /* Text color */
+  color: white; 
   font-family: monospace;
   font-size: 20px;
   font-weight: bold;

@@ -64,6 +64,8 @@ function Game() {
             isNext={xIsNext}
             onPlay={handlePlay}
             squares={currentSquares}
+            player1Props={player1}
+            player2Props={player2}
           />
         </div>
         <div className="game-info">
