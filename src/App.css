@@ -1,7 +1,7 @@
 /* Square.css */
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: monospace;
   background-color: #0d0f15;
 }
 
@@ -33,6 +33,7 @@ body {
 
 
 .board-title {
+  font-family: monospace;
   font-size: 50px;
   color: #3a7ca5;
   text-align: center; 
@@ -72,6 +73,7 @@ body {
 
 /* Style for the buttons in the moves list */
 .game-info button {
+  font-family: monospace;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -131,6 +133,7 @@ input {
 }
 
 button {
+  font-family: monospace;
   padding: 10px;
   background-color: #4CAF50;
   color: white;
