@@ -12,10 +12,10 @@ let status;
 
 if (winner) {
   status = (
-    <>
+    <div className="winner-status">
       <Confetti />
-      Winner: {winner}
-    </>
+      <div>Winner: {winner}</div>
+    </div>
   );
 } else {
   status = "Next player: " + (isNext ? "X" : "O");
