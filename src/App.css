@@ -55,35 +55,25 @@ body {
 
 
 
-
-
-
 .game-info ol {
   padding: 0;
   list-style-type: none;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  position: relative; /* Adjust as needed */
+  top: 10px; /* Adjust as needed */
+  text-align: center; /* Center the list under the board */
 }
-
-
-
-
-
 
 .game-info button {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  padding: 8px;
-  background-color: #4CAF50; 
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding: 6px;
+  position: relative; /* Adjust as needed */
+  top: 10px; /* Adjust as needed */
+  text-align: center; /* Center the button under the board */
 }
+
+
+
 
 
 .game-info button:hover {
@@ -164,4 +154,77 @@ button:hover {
 .names-of-players p {
   margin: 5px;
 }
+.form-container {
+  background-color: #3a7ca5;;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-left: 160px;
+  margin-right: 160px;
+  text-align: center;
+}
 
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .square {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+  }
+
+  .board-title {
+    font-size: 30px;
+  }
+
+  .status {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .game-info ol {
+    padding: 0;
+    list-style-type: none;
+    position: relative; /* Adjust as needed */
+    top: 10px; /* Adjust as needed */
+    text-align: center; /* Center the list under the board */
+  }
+
+  .game-info button {
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding: 6px;
+    position: relative; /* Adjust as needed */
+    top: 10px; /* Adjust as needed */
+    text-align: center; /* Center the button under the board */
+  }
+
+  .display-names,
+  .names-of-players {
+    font-size: 16px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    font-size: 12px;
+    
+
+}
+input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 6px;
+  color: rgb(47, 100, 170);
+  background-color: #3a7ca5;
+}
+.form-container {
+  background-color: #3a7ca5;;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+
+}
